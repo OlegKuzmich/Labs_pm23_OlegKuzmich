@@ -1,0 +1,19 @@
+{
+  "name": "labs_pm23_olegkuzmich",
+  "version": "1.0.0",
+  "description": "Labs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegKuzmich/Labs_pm23_OlegKuzmich.git"
+  },
+  "author": "OlegKuzmich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegKuzmich/Labs_pm23_OlegKuzmich/issues"
+  },
+  "homepage": "https://github.com/OlegKuzmich/Labs_pm23_OlegKuzmich#readme"
+}
