@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/OlegKuzmich/Labs_pm23_OlegKuzmich/issues"
   },
-  "homepage": "https://github.com/OlegKuzmich/Labs_pm23_OlegKuzmich#readme"
+  "homepage": "https://github.com/OlegKuzmich/Labs_pm23_OlegKuzmich#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1"
+  }
 }
