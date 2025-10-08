@@ -43,8 +43,8 @@ function jsTask() {
 
 // Таска для зображень
 function imgTask() {
-    return src('app/img/*')
-        .pipe(imagemin())
+    return src('app/img/*', {encoding: false})
+
         .pipe(dest('dist/imgs'));
 }
 
@@ -60,6 +60,6 @@ function serve() {
 
 // Головна задача
 exports.default = series(
-    parallel(htmlTask, scssTask, jsTask,),
-    serve
+    parallel(htmlTask, scssTask, jsTask,imgTask,
+    serve)
 );
