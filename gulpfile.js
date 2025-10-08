@@ -42,11 +42,11 @@ function jsTask() {
 }
 
 // Таска для зображень
-/*function imgTask() {
+function imgTask() {
     return src('app/img/*')
         .pipe(imagemin())
         .pipe(dest('dist/imgs'));
-}*/
+}
 
 // BrowserSync
 function serve() {
