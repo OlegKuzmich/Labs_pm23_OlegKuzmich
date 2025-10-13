@@ -63,3 +63,11 @@ exports.default = series(
     parallel(htmlTask, scssTask, jsTask,imgTask,
     serve)
 );
+
+// Бібліотека,яка дозволяє збирати декілька html файлів в один
+export const html_task = () => src('app/index.html')
+    .pipe(fileInclude({
+        prefix: '@@',
+        basepath: '@file'
+    }))
+    .pipe(dest('dist'));
