@@ -71,3 +71,13 @@ export const html_task = () => src('app/index.html')
         basepath: '@file'
     }))
     .pipe(dest('dist'));
+
+const bootstrapCSS = () => {
+    return src('node_modules/bootstrap/dist/css/bootstrap.min.css')
+        .pipe(dest('dist/css'));
+}
+
+const bootstrapJS = () => {
+    return src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')
+        .pipe(dest('dist/js'));
+}
