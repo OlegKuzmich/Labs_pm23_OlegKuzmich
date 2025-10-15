@@ -1,7 +1,6 @@
 {
   "name": "labs_pm23_olegkuzmich",
   "version": "1.0.0",
-  "type": "module",
   "description": "Labs",
   "main": "index.js",
   "scripts": {
