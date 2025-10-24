@@ -60,10 +60,19 @@ function serve() {
     watch('app/js/*.js', jsTask);
 }
 
+const bootstrapCSS = () => {
+    return src('node_modules/bootstrap/dist/css/bootstrap.min.css')
+        .pipe(dest('dist/css'));
+}
+
+const bootstrapJS = () => {
+    return src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')
+        .pipe(dest('dist/js'));
+}
+
 // Головна задача
 exports.default = series(
-    parallel(htmlTask, scssTask, jsTask,imgTask,
-        serve)
+    parallel(htmlTask, scssTask, jsTask,imgTask, serve,bootstrapCSS,bootstrapJS)
 );
 
 // Приклад html таски з бібліотеки gulp-file-include
@@ -79,12 +88,3 @@ function html_task() {
 exports.html_task = html_task;
 
 
-const bootstrapCSS = () => {
-    return src('node_modules/bootstrap/dist/css/bootstrap.min.css')
-        .pipe(dest('dist/css'));
-}
-
-const bootstrapJS = () => {
-    return src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')
-        .pipe(dest('dist/js'));
-}
