@@ -14,6 +14,8 @@ const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 //const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
+const fileInclude = require('gulp-file-include');
+
 
 // Таска для HTML
 function htmlTask() {
@@ -58,8 +60,31 @@ function serve() {
     watch('app/js/*.js', jsTask);
 }
 
+const bootstrapCSS = () => {
+    return src('node_modules/bootstrap/dist/css/bootstrap.min.css')
+        .pipe(dest('dist/css'));
+}
+
+const bootstrapJS = () => {
+    return src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')
+        .pipe(dest('dist/js'));
+}
+
 // Головна задача
 exports.default = series(
-    parallel(htmlTask, scssTask, jsTask,imgTask,
-    serve)
+    parallel(htmlTask, scssTask, jsTask,imgTask, serve,bootstrapCSS,bootstrapJS)
 );
+
+// Приклад html таски з бібліотеки gulp-file-include
+function html_task() {
+    return src('app/index.html')
+        .pipe(fileInclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(dest('dist'))
+        .pipe(browserSync.stream());
+}
+exports.html_task = html_task;
+
+
