@@ -1,42 +1,68 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Мій перший Gulp проєкт</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
+<style>
+    header, nav, section, article, aside, footer {
+        border: 2px solid #999;
+        padding: 10px;
+        margin: 5px 0;
+        text-align: center;
+    }
+    header { background: #d6eaff; }
+    nav { background: #cce5ff; }
+    section { background: #eaffd6; }
+    article { background: #f7d6e0; }
+    aside { background: #fff3cd; }
+    footer { background: #d4edda; }
+</style>
 <body>
 
-<h1>PM_23_10</h1>
 
-<div class="container">
-    <div class="row">
-        <div class="col-3" style="border: 2px solid red;">
-            Logo
-        </div>
-        <div class="col-9" style="border: 2px solid green;">
+
+<div class="row">
+    <!-- Ліва частина -->
+    <section class="col-md-8">
+        <header>Заголовок секції</header>
+
+        <article class="p-2">
+            <header>Заголовок статті</header>
+            <p>Основний текст</p>
+
             <div class="row">
-                <div class="col-6" style="border: 2px solid blue;">
-                    Image
+                <div class="col-md-8">
+                    <p>Додатковий текст</p>
                 </div>
-                <div class="col-6" style="border: 2px solid yellow;">
-                    Username
-                </div>
+                <aside class="col-md-4">
+                    Боковий блок (aside)
+                </aside>
             </div>
-        </div>
-    </div>
+
+            <footer>Підвал статті</footer>
+        </article>
+    </section>
+
+    <!-- Права частина -->
+    <section class="col-md-4">
+        <header>Друга секція</header>
+        <nav>Навігація праворуч</nav>
+    </section>
 </div>
 
-
-
-
-<!--<img src="imgs/image.jpg" alt="Photo">-->
-
-
+<!-- Нижній підвал -->
+<footer class="row">
+    <div class="col-12">Загальний підвал сторінки</div>
+</footer>
+</div>
 
 
 <script src="js/bootstrap.bundle.min.js" defer></script>
 <script src="js/index.min.js" defer></script>
+
 </body>
 </html>
