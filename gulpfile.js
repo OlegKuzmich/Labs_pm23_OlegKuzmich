@@ -20,6 +20,10 @@ const fileInclude = require('gulp-file-include');
 // Таска для HTML
 function htmlTask() {
     return src('app/**/*.html')
+        .pipe(fileInclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
         .pipe(dest('dist'))
         .pipe(browserSync.stream());
 }
@@ -75,16 +79,5 @@ exports.default = series(
     parallel(htmlTask, scssTask, jsTask,imgTask, serve,bootstrapCSS,bootstrapJS)
 );
 
-// Приклад html таски з бібліотеки gulp-file-include
-function html_task() {
-    return src('app/index.html')
-        .pipe(fileInclude({
-            prefix: '@@',
-            basepath: '@file'
-        }))
-        .pipe(dest('dist'))
-        .pipe(browserSync.stream());
-}
-exports.html_task = html_task;
 
 
