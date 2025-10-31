@@ -19,7 +19,7 @@ const fileInclude = require('gulp-file-include');
 
 // Таска для HTML
 function htmlTask() {
-    return src('app/**/*.html')
+    return src('src/app/**/*.html')
         .pipe(fileInclude({
             prefix: '@@',
             basepath: '@file'
@@ -30,7 +30,7 @@ function htmlTask() {
 
 // Таска для SCSS
 function scssTask() {
-    return src('app/scss/*.scss')
+    return src('src/app/scss/*.scss')
         .pipe(sass())
         .pipe(cssnano())
         .pipe(rename({ suffix: '.min' }))
@@ -40,7 +40,7 @@ function scssTask() {
 
 // Таска для JS
 function jsTask() {
-    return src('app/js/*.js')
+    return src('src/app/js/*.js')
         .pipe(concat('script.min.js'))
         .pipe(uglify())
         .pipe(dest('dist/js'))
@@ -49,7 +49,7 @@ function jsTask() {
 
 // Таска для зображень
 function imgTask() {
-    return src('app/img/*', {encoding: false})
+    return src('src/app/img/*', {encoding: false})
 
         .pipe(dest('dist/imgs'));
 }
@@ -59,9 +59,9 @@ function serve() {
     browserSync.init({
         server: { baseDir: 'dist/' }
     });
-    watch('app/**/*.html', htmlTask);
-    watch('app/scss/*.scss', scssTask);
-    watch('app/js/*.js', jsTask);
+    watch('src/app/**/*.html', htmlTask);
+    watch('src/app/scss/*.scss', scssTask);
+    watch('src/app/js/*.js', jsTask);
 }
 
 const bootstrapCSS = () => {

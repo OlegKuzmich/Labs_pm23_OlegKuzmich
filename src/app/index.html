@@ -10,87 +10,27 @@
 </head>
 
 <body>
-<div class="container my-5">
+
+<div class="container py-5">
+    <div class="bg-white shadow ">
+
     <header class="row align-items-center mb-5">
-        <div class="col-6">
-            <h1>MICHEL RIGAURIO</h1>
-            <p>UI/UX Designer</p>
-        </div>
-        <div class="col-6">
-            <img src="imgs/image.jpg" width="206" height="200" style="margin-top:50px " alt="Michel Rigaurio">
-        </div>
+        @@include('components/header.html')
     </header>
+
     <div class="row">
+
         <div class="col-9">
-            <section>
-            <h3>EDUCATION</h3>
-            <div class="row">
-                <div class="col-6">
-                <h6>ENTER YOUR MAJOR</h6>
-                    <p>Name Of Your University<br>2005-2009</p>
-                </div>
-                <div class="col-6">
-                <h6>ENTER YOUR MAJOR</h6>
-                    <p>Name Of Your University<br>2005-2009</p>
-                </div>
-            </div>
-            </section>
+            @@include('components/main-content.html')
+          </div>
 
-            <section>
-            <h3>EXPERIENCE</h3>
-            <br>
-            <h6>Enter Job Position Here</h6>
-            <h6>Present Company Name/Location</h6>
-            <p>Lorem ipsum dolor sit amet, this is a thena consectetur
-                adipisicing elit, sed do eiusmod tempor incididunt ut labore
-            </p>
+          <div class="col-3">
+            @@include('components/sidebar.html')
+          </div>
 
-            <h6>Enter Job Position Here</h6>
-            <h6>Present Company Name/Location</h6>
-            <p>Lorem ipsum dolor sit amet, this is a thena consectetur
-                adipisicing elit, sed do eiusmod tempor incididunt ut labore
-            </p>
-            </section>
-
-            <section>
-            <h3>EXPERTISE</h3>
-            </section>
-
-        </div>
-        <div class="col-3">
-            <section>
-            <H3>ABOUT ME</H3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.
-            </p>
-            </section>
-
-            <div class="row">
-                <section>
-            <H3>CONTACT INFO</H3>
-
-                <h6>PHONE</h6>
-                <p>+000 123 456 789</p>
-
-                <h6>EMAIL</h6>
-                <p>urname@gmail.com</p>
-
-                <h6>AREA</h6>
-                <p>Your Street Address Here</p>
-                </section>
-            </div>
-            <div class="row">
-                <section>
-            <H3>HOBBIES</H3>
-                </section>
-            </div>
         </div>
     </div>
 </div>
-
 
 <script src="js/bootstrap.bundle.min.js" defer></script>
 <script src="js/index.min.js" defer></script>
