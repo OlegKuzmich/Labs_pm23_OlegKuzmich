@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-    <title>Resume</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="resume-bg">
-<div class="container">
-    <div class="resume-inner">
+<body>
 
-        <header class="row resume-header m-0">
-            @@include('components/header/header.html')
-        </header>
+<div class="container py-5">
+    <div class="bg-white shadow ">
 
-        <div class="row m-0">
-            <div class="col-8 main-column m-0 ">
-                @@include('components/main-content/main-content.html')
-            </div>
+    <header class="row align-items-center mb-5">
+        @@include('components/header/header.html')
+    </header>
 
-            <div class="col-4 sidebar-column ">
-                @@include('components/sidebar/sidebar.html')
-            </div>
+    <div class="row">
+
+        <div class="col-9">
+            @@include('components/main-content/main-content.html')
         </div>
 
+        <div class="col-3">
+            @@include('components/sidebar/sidebar.html')
+        </div>
+
+        </div>
     </div>
 </div>
 
-а3ап3к
 <script src="js/bootstrap.bundle.min.js" defer></script>
 <script src="js/index.min.js" defer></script>
+
 </body>
 </html>
