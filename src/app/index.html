@@ -9,22 +9,21 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="resume-bg">
+<div class="container">
+    <div class="resume-inner">
 
-<div class="container py-5">
-    <div class="bg-white shadow ">
-
-    <header class="row align-items-center mb-5">
+    <header class="row resume-header m-0">
         @@include('components/header/header.html')
     </header>
 
-    <div class="row">
+    <div class="row m-0">
 
-        <div class="col-9">
+        <div class="col-8 main-column m-0 ">
             @@include('components/main-content/main-content.html')
         </div>
 
-        <div class="col-3">
+        <div class="col-4 sidebar-column ">
             @@include('components/sidebar/sidebar.html')
         </div>
 
