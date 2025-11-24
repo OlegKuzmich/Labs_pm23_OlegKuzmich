@@ -1,8 +1,55 @@
 .grey-rectangle{
-  padding: 50px;
+  position: relative;
+  padding: 60px;
   background-color: #2b3036;
 }
 .main-column{
   padding: 0 0 0 40px;
   color:#ececec;
+}
+.education,.experience,.expertise {
+  background-color: #373c42;
+  height: 23px;
+  margin-left: -60px;
+  margin-right: -60px;
+  padding: 0 60px;
+  line-height: 25px;
+  font-weight:600;
+}
+
+.section-block-education .big-yellow-rectangle{
+  position: absolute;
+  width: 10px;
+  height: 23px;
+  background-color: #ffc905;
+  margin-left: -60px;
+  margin-top: -31px;
+}
+.section-block-experience .big-yellow-rectangle{
+  position: absolute;
+  width: 10px;
+  height: 23px;
+  background-color: #ffc905;
+  margin-left: -60px;
+  margin-top: -31px;
+}
+.section-block-expertise .big-yellow-rectangle{
+  position: absolute;
+  width: 10px;
+  height: 23px;
+  background-color: #ffc905;
+  margin-left: -60px;
+  margin-top: -31px;
+}
+
+.enter-your-magor{
+  padding-bottom: 85px;
+}
+.enter-your-magor h6{
+  padding: 27px 0 5px 0;
+  font-size: 13px;
+  font-weight: bolder;
+}
+.enter-your-magor p{
+  font-size: 12.5px
 }
