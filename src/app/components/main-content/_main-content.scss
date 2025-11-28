@@ -1,14 +1,16 @@
+@use "../../scss/variables" as v;
+
 .grey-rectangle{
   position: relative;
   padding: 60px;
-  background-color: #2b3036;
+  background-color: v.$grey-main-content;
 }
 .main-column{
   padding: 0 0 0 40px;
-  color:#ececec;
+  color: v.$white-main-content;
 }
 .education,.experience,.expertise {
-  background-color: #373c42;
+  background-color: v.$grey-ribbon-main;
   height: 23px;
   margin-left: -60px;
   margin-right: -60px;
@@ -19,25 +21,34 @@
 
 .section-block-education .big-yellow-rectangle{
   position: absolute;
-  width: 10px;
+  width: 14px;
   height: 23px;
-  background-color: #ffc905;
+  background-color: v.$yellow;
   margin-left: -60px;
   margin-top: -31px;
 }
+.section-block-education .small-yellow-rectangle{
+  position: absolute;
+  background: v.$yellow;
+  width: 19px;
+  height: 3px;
+  margin-left: 119px;
+  margin-top: -7.6px;
+}
+
 .section-block-experience .big-yellow-rectangle{
   position: absolute;
-  width: 10px;
+  width: 14px;
   height: 23px;
-  background-color: #ffc905;
+  background-color: v.$yellow;
   margin-left: -60px;
   margin-top: -31px;
 }
 .section-block-expertise .big-yellow-rectangle{
   position: absolute;
-  width: 10px;
+  width: 14px;
   height: 23px;
-  background-color: #ffc905;
+  background-color: v.$yellow;
   margin-left: -60px;
   margin-top: -31px;
 }

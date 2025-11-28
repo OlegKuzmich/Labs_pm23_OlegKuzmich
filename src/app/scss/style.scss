@@ -1,20 +1,18 @@
 @use "../components/sidebar/sidebar";
 @use "../components/main-content/main-content";
 @use "../components/header/header";
+@use  "variables" as v;
 
-body{
-  font-family: Arial, sans-serif;
-}
 
 .resume-bg {
-  background: #e4e4e4;
+  background: v.$resume-bg;
 }
 
 .resume-inner {
   max-width: 810px;
   margin: 120px auto 90px auto ;
-  background-color: white;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.60);
+  background-color: v.$white;
+  box-shadow: 0 0 50px v.$shadow;
   position: relative;
 }
 

@@ -1,3 +1,5 @@
+@use "../../scss/variables" as v;
+
 .resume-header {
   position: relative;
   margin-bottom: 40px;
@@ -5,25 +7,28 @@
 }
 
 .header-information #FirstName{
+  font-family: v.$sub-font;
   font-size: 40px;
   letter-spacing: 1px;
   font-weight: 500;
-  line-height: 1.1;
-  color: #ffd739;
+  line-height: 20px;
+  color: v.$yellow-firstname;
 }
 
 .header-information #LastName {
+  font-family: v.$font-main;
   display: block;
   font-weight: 750;
   font-size: 40px;
-  color: #363636;
+  color: v.$gray;
 }
 
 .header-information .subtitle {
+  font-family: v.$sub-font;
   font-size: 19px;
   line-height: 0.5;
   letter-spacing: 0.5px;
-  color: #4e4e4e;
+  color: v.$gray;
 }
 .header-information img{
   position: absolute;
@@ -40,7 +45,7 @@
 
 .white-small-rectangle{
   position: absolute;
-  background-color: #ffffff;
+  background-color: v.$white;
   width: 130px;
   height: 5px;
   z-index: 2;
@@ -50,7 +55,7 @@
 
 .yellow-small-rectangle{
   position: absolute;
-  background-color: #ffc905;
+  background-color: v.$yellow;
   width: 130px;
   height: 5px;
   margin-top:150px;
@@ -59,7 +64,7 @@
 }
 
 .black-small-rectangle{
-  background-color: black;
+  background-color: v.$black;
   position: absolute;
   width: 60px;
   height: 3px;
@@ -69,6 +74,6 @@
 }
 
 .yellow-block{
- background: #ffc905;
+ background: v.$yellow;
 }
 
