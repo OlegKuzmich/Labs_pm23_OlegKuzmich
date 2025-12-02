@@ -1,0 +1,5 @@
+@use "variables" as v;
+
+@mixin circle-gradient($percent, $start-angle: 135deg) {
+  background: conic-gradient(from $start-angle, v.$yellow #{$percent}, v.$white 0);
+}

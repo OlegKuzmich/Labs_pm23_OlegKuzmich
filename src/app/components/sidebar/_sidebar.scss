@@ -1,0 +1,141 @@
+@use "../../scss/variables" as v;
+@use "../../scss/mixins" as m;
+@use "../../scss/extend";
+
+
+.sidebar-column{
+  padding: 70px 0 0 40px;
+}
+
+.about-me, .contact-info, .hobbies {
+  font-size: 21px;
+  position: relative;
+  letter-spacing: 2px;
+  font-family: v.$Oswald;
+  height: 20px;
+  margin-left: -60px;
+  margin-right: -60px;
+  padding: 0 60px;
+  line-height: 26px;
+  font-weight:500;
+  color: v.$grey-main-content;
+}
+.ribbon-bg-sidebar{
+  position: absolute;
+  height: 19px;
+  width: 290px;
+  margin:4.5px 0 0 -40px;
+  background-color: #F0F0F0;
+}
+
+
+.section-block-about .big-yellow-rectangle{
+  position: absolute;
+  width: 12px;
+  height: 19px;
+  background-color: v.$yellow;
+  margin-left: -40px;
+  margin-top: -23.5px;
+}
+.section-block-about .small-yellow-rectangle{
+  position: absolute;
+  background: v.$yellow;
+  width: 15px;
+  height: 2.5px;
+  margin-left: 100px;
+  margin-top: -5px;
+}
+.section-block-contact .big-yellow-rectangle{
+  position: absolute;
+  width: 12px;
+  height: 19px;
+  background-color: v.$yellow;
+  margin-left: -40px;
+  margin-top: -23.5px;
+}
+.section-block-contact .small-yellow-rectangle{
+  position: absolute;
+  background: v.$yellow;
+  width: 15px;
+  height: 2.5px;
+  margin-left: 140px;
+  margin-top: -5px;
+}
+.section-block-hobbies .big-yellow-rectangle{
+  position: absolute;
+  width: 12px;
+  height: 19px;
+  background-color: v.$yellow;
+  margin-left: -40px;
+  margin-top: -23.5px;
+}
+.section-block-hobbies .small-yellow-rectangle{
+  position: absolute;
+  background: v.$yellow;
+  width: 15px;
+  height: 2.5px;
+  margin-left: 87px;
+  margin-top: -5px;
+}
+
+
+.section-block-about p{
+ padding: 20px 40px 60px 0;
+  font-size: 12.9px;
+  color: v.$grey-main-content;
+  font-family: v.$Montserrat;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+
+
+.section-block-contact p{
+  padding: 2px 0 0 0;
+  font-family: v.$Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  color: v.$grey-main-content;
+}
+
+.phone{
+  margin: 0 0 0 0;
+  padding: 25px 0 0 0;
+}
+.email, .area{
+  margin: 0 0 0 0;
+}
+.address{
+  margin: 0 0 85px 0;
+}
+
+
+.icons {
+  padding: 20px 30px 0 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  .hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    .hobby-icon {
+      color: v.$yellow;
+      width: 33px;
+      height: 33px;
+      border: 2px solid v.$yellow;
+      border-radius: 50%;
+      @extend %flex-center;
+      font-size: 15px;
+      margin-bottom: 0.5rem;
+    }
+
+  }
+  p {
+    font-size: 13px;
+    margin: 0; color: v.$grey-main-content;
+    font-family: v.$Montserrat;
+    font-weight: 500;
+  }
+}
+

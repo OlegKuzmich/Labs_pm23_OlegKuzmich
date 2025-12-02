@@ -8,11 +8,20 @@
   background: v.$resume-bg;
 }
 
+
 .resume-inner {
-  max-width: 810px;
+  max-width: 870px;
   margin: 120px auto 90px auto ;
   background-color: v.$white;
   box-shadow: 0 0 50px v.$shadow;
   position: relative;
 }
 
+
+.footer-colum-1{
+  padding-top: 27px;
+}
+
+.footer-colum-2{
+  background-color: v.$yellow;
+}
