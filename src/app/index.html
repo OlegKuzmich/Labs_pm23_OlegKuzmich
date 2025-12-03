@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://kit.fontawesome.com/35a30f1cab.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="resume-bg">
 
-<div class="container py-5">
-    <div class="bg-white shadow ">
+<div class="container">
+    <div class="resume-inner">
 
-    <header class="row align-items-center mb-5">
+    <header class="row resume-header m-0">
         @@include('components/header/header.html')
     </header>
 
-    <div class="row">
+    <div class="row m-0">
 
-        <div class="col-9">
+        <div class="col-8 main-column m-0 ">
             @@include('components/main-content/main-content.html')
         </div>
 
-        <div class="col-3">
+        <div class="col-4 sidebar-column m-0 ">
             @@include('components/sidebar/sidebar.html')
         </div>
 
-        </div>
     </div>
+
+        <footer class="row m-0">
+            <div class="col-8 footer-colum-1 m-0 "></div>
+            <div class="col-4 footer-colum-2 m-0 "></div>
+        </footer>
+
 </div>
+
 
 <script src="js/bootstrap.bundle.min.js" defer></script>
 <script src="js/index.min.js" defer></script>
