@@ -33,159 +33,164 @@
 }
 
 
-.section-block-education .big-yellow-rectangle{
-  position: absolute;
-  width: 12px;
-  height: 19px;
-  background-color: v.$yellow;
-  margin-left: -60px;
-  margin-top: -23.5px;
+.section-block-education {
+  .big-yellow-rectangle {
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    background-color: v.$yellow;
+    margin-left: -60px;
+    margin-top: -23.5px;
+  }
+
+  .small-yellow-rectangle {
+    position: absolute;
+    background: v.$yellow;
+    width: 15px;
+    height: 2.5px;
+    margin-left: 114.5px;
+    margin-top: -5px;
+  }
+
+  .enter-your-magor {
+    padding-bottom: 75px;
+    font-family: v.$Poppins;
+
+    h6 {
+      padding: 27px 0 5px 0;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 13px;
+      font-weight: 300;
+    }
+  }
 }
-.section-block-education .small-yellow-rectangle{
-  position: absolute;
-  background: v.$yellow;
-  width: 15px;
-  height: 2.5px;
-  margin-left: 114.5px;
-  margin-top: -5px;
+
+.section-block-experience {
+  .big-yellow-rectangle {
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    background-color: v.$yellow;
+    margin-left: -60px;
+    margin-top: -23.5px;
+  }
+
+  .small-yellow-rectangle {
+    position: absolute;
+    background: v.$yellow;
+    width: 15px;
+    height: 2.5px;
+    margin-left: 123px;
+    margin-top: -5px;
+  }
+  .enter-job-1{
+    padding: 22px 0 0 0;
+  }
+  .enter-job-2{
+    padding: 22px 0 90px 0;
+  }
+  .enter-job-1, .enter-job-2 {
+    font-size: 15px;
+  }
+
+  .company-name{
+    font-weight: 500;
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    margin: 14px 0 10px 0;
+  }
+
+  .present{
+    display: inline-block;
+    background-color: v.$yellow;
+    color: v.$grey-main-content;
+    padding: 2px 14px 2px 14px;
+    border-radius: 3.5px;
+    margin-right:10px ;
+    font-size: 13px;
+  }
+  .years{
+    display: inline-block;
+    background-color: v.$yellow;
+    color: v.$grey-main-content;
+    padding: 2px 5px 2px 5px;
+    border-radius: 3.5px;
+    margin-right:10px;
+    font-size: 12.5px;
+    letter-spacing: 0.1px;
+  }
 }
 
 
-.section-block-experience .big-yellow-rectangle{
-  position: absolute;
-  width: 12px;
-  height: 19px;
-  background-color: v.$yellow;
-  margin-left: -60px;
-  margin-top: -23.5px;
-}
-.section-block-experience .small-yellow-rectangle{
-  position: absolute;
-  background: v.$yellow;
-  width: 15px;
-  height: 2.5px;
-  margin-left: 123px;
-  margin-top: -5px;
-}
+.section-block-expertise {
+  .big-yellow-rectangle {
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    background-color: v.$yellow;
+    margin-left: -60px;
+    margin-top: -23.5px;
+  }
 
+  .small-yellow-rectangle {
+    position: absolute;
+    background: v.$yellow;
+    width: 15px;
+    height: 2.5px;
+    margin-left: 108px;
+    margin-top: -5.5px;
+  }
 
-.section-block-expertise .big-yellow-rectangle{
-  position: absolute;
-  width: 12px;
-  height: 19px;
-  background-color: v.$yellow;
-  margin-left: -60px;
-  margin-top: -23.5px;
-}
-.section-block-expertise .small-yellow-rectangle{
-  position: absolute;
-  background: v.$yellow;
-  width: 15px;
-  height: 2.5px;
-  margin-left: 108px;
-  margin-top: -5.5px;
-}
-
-
-.enter-your-magor{
-  padding-bottom: 75px;
-  font-family: v.$Poppins;
-}
-.enter-your-magor h6{
-  padding: 27px 0 5px 0;
-  font-size: 15px;
-  font-weight: 500;
-}
-.enter-your-magor p{
-  font-size: 13px;
-  font-weight: 300;
-}
-
-
-.enter-job-1{
-  padding: 22px 0 0 0;
-}
-.enter-job-2{
-  padding: 22px 0 90px 0;
-}
-.enter-job-1, .enter-job-2 {
-  font-size: 15px;
-}
-
-.company-name{
-  font-weight: 500;
-  font-size: 13.5px;
-  letter-spacing: 0.5px;
-  margin: 14px 0 10px 0;
-}
-
-.present{
-  display: inline-block;
-  background-color: v.$yellow;
-  color: v.$grey-main-content;
-  padding: 2px 14px 2px 14px;
-  border-radius: 3.5px;
-  margin-right:10px ;
-  font-size: 13px;
-}
-.years{
-  display: inline-block;
-  background-color: v.$yellow;
-  color: v.$grey-main-content;
-  padding: 2px 5px 2px 5px;
-  border-radius: 3.5px;
-  margin-right:10px;
-  font-size: 12.5px;
-  letter-spacing: 0.1px;
-}
-
-
-.expertise-list {
-  padding-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.expertise-item {
-  flex: 0 0 auto;
-  text-align: center;
-}
-.circle {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  position: relative;
-  font-size: 10px;
-  font-weight: 300;
-  line-height: 1.1;
-
-  span {
-    color: white;
+  .expertise-list {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .expertise-item {
+    flex: 0 0 auto;
     text-align: center;
-    font-family: v.$Montserrat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 78%;
-    z-index: 2;
   }
-  &::after {
-    content: "";
-    width: 62px;
-    height: 62px;
+  .circle {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    background: v.$grey-main-content;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1.1;
+
+    span {
+      color: white;
+      text-align: center;
+      font-family: v.$Montserrat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 78%;
+      z-index: 2;
+    }
+    &::after {
+      content: "";
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: v.$grey-main-content;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &.p90 { @include m.circle-gradient(90%); }
+    &.p85 { @include m.circle-gradient(85%); }
+    &.p80 { @include m.circle-gradient(80%, 160deg); }
+    &.p75 { @include m.circle-gradient(75%, 180deg); }
   }
-
-
-  &.p90 { @include m.circle-gradient(90%); }
-  &.p85 { @include m.circle-gradient(85%); }
-  &.p80 { @include m.circle-gradient(80%, 160deg); }
-  &.p75 { @include m.circle-gradient(75%, 180deg); }
 }
